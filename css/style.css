@@ -81,11 +81,15 @@ h3 {
 .map-viewer {
   position: relative;
   width: 100%;
-  aspect-ratio: 1 / 1; /* las imágenes son casi cuadradas */
-  background: #f1f1f1;
+  aspect-ratio: 1 / 1;
+  background: #ffffff;
   border-radius: 6px;
   overflow: hidden;
   border: 1px solid #ddd;
+}
+
+.map-viewer--tall {
+  aspect-ratio: 1417 / 2496;
 }
 
 .map-layer {
@@ -97,6 +101,26 @@ h3 {
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.2s ease-in-out;
+}
+
+.map-layer[data-layer="divisiones"] {
+  z-index: 1;
+}
+
+.map-layer[data-layer="etiquetas"] {
+  z-index: 2;
+}
+
+.map-layer[data-layer="rios"] {
+  z-index: 3;
+}
+
+.map-layer[data-layer="anillo1"] {
+  z-index: 4;
+}
+
+.map-layer[data-layer="anillo2"] {
+  z-index: 5;
 }
 
 /* Clase que se añade cuando la capa está visible */
