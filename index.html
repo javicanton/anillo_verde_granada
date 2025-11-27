@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Anillo Verde Granada · Mapas por capas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Anillo Verde de Granada</h1>
+    <p>Activa o desactiva capas para explorar las distintas propuestas.</p>
+  </header>
+
+  <main class="site-main">
+
+    <!-- =============== MAPA 1: ANILLO VERDE GRANADA ================== -->
+    <section class="map-block" id="map1-section">
+      <h2>Anillo Verde Granada</h2>
+
+      <div class="map-layout">
+        <div class="map-viewer" data-map="map1">
+          <!-- Capas del mapa 1 -->
+          <img
+            src="img/anillo-verde/divisiones.png"
+            alt="Divisiones"
+            class="map-layer"
+            data-layer="divisiones"
+          />
+          <img
+            src="img/anillo-verde/etiquetas.png"
+            alt="Etiquetas"
+            class="map-layer"
+            data-layer="etiquetas"
+          />
+          <img
+            src="img/anillo-verde/rios.png"
+            alt="Ríos"
+            class="map-layer"
+            data-layer="rios"
+          />
+          <img
+            src="img/anillo-verde/anillo-verde-1.png"
+            alt="Anillo Verde 1"
+            class="map-layer"
+            data-layer="anillo1"
+          />
+          <img
+            src="img/anillo-verde/anillo-verde-2.png"
+            alt="Anillo Verde 2"
+            class="map-layer"
+            data-layer="anillo2"
+          />
+        </div>
+
+        <form class="layer-controls" data-map="map1">
+          <h3>Capas del mapa</h3>
+
+          <label>
+            <input type="checkbox" data-layer="divisiones" checked />
+            Divisiones
+          </label>
+
+          <label>
+            <input type="checkbox" data-layer="etiquetas" checked />
+            Etiquetas
+          </label>
+
+          <label>
+            <input type="checkbox" data-layer="rios" checked />
+            Ríos
+          </label>
+
+          <label>
+            <input type="checkbox" data-layer="anillo1" checked />
+            Anillo Verde 1
+          </label>
+
+          <label>
+            <input type="checkbox" data-layer="anillo2" checked />
+            Anillo Verde 2
+          </label>
+        </form>
+      </div>
+    </section>
+
+    <!-- ========== MAPA 2: ANILLO VERDE GRANADA EXTENDIDO ============= -->
+    <section class="map-block" id="map2-section">
+      <h2>Anillo Verde Granada extendido</h2>
+
+      <div class="map-layout">
+        <div class="map-viewer" data-map="map2">
+          <!-- Capas del mapa 2 (mismos nombres de capa) -->
+          <img
+            src="img/anillo-verde-extendido/divisiones.png"
+            alt="Divisiones"
+            class="map-layer"
+            data-layer="divisiones"
+          />
+          <img
+            src="img/anillo-verde-extendido/etiquetas.png"
+            alt="Etiquetas"
+            class="map-layer"
+            data-layer="etiquetas"
+          />
+          <img
+            src="img/anillo-verde-extendido/rios.png"
+            alt="Ríos"
+            class="map-layer"
+            data-layer="rios"
+          />
+          <img
+            src="img/anillo-verde-extendido/anillo-verde-1.png"
+            alt="Anillo Verde 1"
+            class="map-layer"
+            data-layer="anillo1"
+          />
+          <img
+            src="img/anillo-verde-extendido/anillo-verde-2.png"
+            alt="Anillo Verde 2"
+            class="map-layer"
+            data-layer="anillo2"
+          />
+        </div>
+
+        <form class="layer-controls" data-map="map2">
+          <h3>Capas del mapa</h3>
+
+          <label>
+            <input type="checkbox" data-layer="divisiones" checked />
+            Divisiones
+          </label>
+
+          <label>
+            <input type="checkbox" data-layer="etiquetas" checked />
+            Etiquetas
+          </label>
+
+          <label>
+            <input type="checkbox" data-layer="rios" checked />
+            Ríos
+          </label>
+
+          <label>
+            <input type="checkbox" data-layer="anillo1" checked />
+            Anillo Verde 1
+          </label>
+
+          <label>
+            <input type="checkbox" data-layer="anillo2" checked />
+            Anillo Verde 2
+          </label>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>Mapa experimental · Anillo Verde Granada · GitHub Pages</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
