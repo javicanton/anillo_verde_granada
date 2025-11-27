@@ -70,6 +70,19 @@ h3 {
   align-items: flex-start;
 }
 
+.map-main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.map-main h2 {
+  margin: 0;
+  text-align: center;
+  width: 100%;
+}
+
 @media (max-width: 768px) {
   .map-layout {
     grid-template-columns: 1fr;
@@ -136,8 +149,7 @@ h3 {
   padding: 0.75rem 0.9rem 0.9rem;
   border: 1px solid #e0e0e0;
   font-size: 0.95rem;
-  max-width: 280px;
-  width: 100%;
+  width: min(170px, 100%);
   justify-self: start;
   align-self: flex-start;
 }
